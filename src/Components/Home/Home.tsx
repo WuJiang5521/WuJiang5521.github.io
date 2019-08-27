@@ -92,9 +92,10 @@ const Home: React.FC = () => {
             </div>
             <div className={classes.biography}>
                 <Typography variant={"h4"} className={classes.title}>Biography</Typography>
-                <Typography variant={"h5"}>Jiang Wu is currently a Ph.D. student in the State Key Lab of CAD&CG,
-                    Zhejiang University in China. His research interests are in <i>Sports Data
-                        Visualizations</i></Typography>
+                <Typography variant={"h5"}>
+                    Jiang Wu is currently a Ph.D. student in <i>ZJUIDG, the State Key Lab of CAD&CG, Zhejiang
+                    University</i> in China. His research interests are in <i>Sports Data Visualizations</i>
+                </Typography>
                 <div className={classes.separator}/>
                 <Typography variant={"h4"} className={classes.title}>Resume</Typography>
                 <Typography variant={"h5"}>9.2015~6.2019, BS in Computer Science, Zhejiang University</Typography>
