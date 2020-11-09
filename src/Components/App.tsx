@@ -7,13 +7,13 @@ import {
     MuiThemeProvider,
     createMuiTheme,
     Avatar,
-    Toolbar, Typography, Button, Container
+    Toolbar, Typography, Button, Container, CssBaseline
 } from "@material-ui/core";
 import store from "../Store/store";
 import groupLogo from '../assets/group.png';
 import {Router, Route, Link, Redirect} from 'react-router-dom';
 import {createBrowserHistory} from 'history';
-import {fade} from "@material-ui/core/styles";
+import {fade, lighten, darken} from "@material-ui/core/styles";
 import createPalette from "@material-ui/core/styles/createPalette";
 import Home from "./Home/Home";
 import Works from "./Works/Works";
@@ -101,27 +101,30 @@ const App: React.FC = () => {
             ].join(','),
         },
         overrides: {
-            MuiContainer: {
-                root: {
-                    backgroundColor: fade(palette.secondary.light, 0),
-                    '-webkit-background-clip': 'text',
-                    transition: 'background-color .5s',
-                    '&:hover': {
-                        backgroundColor: palette.secondary.light,
+            MuiCssBaseline: {
+                '@global': {
+                    '*::-webkit-scrollbar': {
+                        width: 10,
                     },
-                    '&::-webkit-scrollbar': {
-                        width: 12,
-                    },
-                    '&::-webkit-scrollbar-track': {
+                    '*::-webkit-scrollbar-track': {
                         display: 'none',
                     },
-                    '&::-webkit-scrollbar-thumb': {
-                        backgroundColor: 'inherit',
+                    '*::-webkit-scrollbar-corner': {
+                        display: 'none',
+                    },
+                    '*::-webkit-scrollbar-thumb': {
+                        backgroundColor: fade(palette.secondary.main, 0.1),
                         borderRadius: 10,
                     },
-                    '&::-webkit-scrollbar-thumb:hover': {
-                        backgroundColor: palette.secondary.dark,
+                    '*:hover::-webkit-scrollbar-thumb': {
+                        backgroundColor: lighten(palette.secondary.main, 0.2),
                     },
+                    '*::-webkit-scrollbar-thumb:hover': {
+                        backgroundColor: palette.secondary.main,
+                    },
+                    '*::-webkit-scrollbar-thumb:active': {
+                        backgroundColor: darken(palette.secondary.main, 0.2),
+                    }
                 }
             }
         }
@@ -129,6 +132,7 @@ const App: React.FC = () => {
     const Decoration: React.FC = () => <div className={classes.decoration}/>;
     return (
         <MuiThemeProvider theme={theme}>
+            <CssBaseline/>
             <Router history={history}>
                 <div className={classes.root}>
                     <AppBar>

@@ -1,0 +1,29 @@
+html, body {
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: hidden auto;
+}
+
+#root {
+    width: 100vw;
+    height: auto;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.platform-logo {
+    width: 100vw;
+}
+
+#content {
+}
+
+#content > p {
+    text-align: justify;
+}

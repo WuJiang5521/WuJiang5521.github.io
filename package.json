@@ -15,9 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "set PUBLIC_URL=https://wujiang5521.github.io&&react-scripts build&&rmdir /s/q .\\dist\\static&&xcopy .\\build .\\dist /e"
   },
   "eslintConfig": {
     "extends": "react-app"

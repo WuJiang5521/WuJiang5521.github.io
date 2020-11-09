@@ -99,6 +99,7 @@ const Home: React.FC = () => {
                 <div className={classes.separator}/>
                 <Typography variant={"h4"} className={classes.title}>Resume</Typography>
                 <Typography variant={"h5"}>9.2015~6.2019, BS in Computer Science, Zhejiang University</Typography>
+                <Typography variant={"h5"}>9.2019~now, Ph.D. in Computer Science, Zhejiang University</Typography>
             </div>
         </div>
         <div className={classes.connectWithMe}>
