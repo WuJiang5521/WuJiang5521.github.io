@@ -1,0 +1,136 @@
+[
+  {
+    "id": "template",
+    "title": "Template Title: string",
+    "author": ["string", "list"],
+    "journal": "null or undefined: none | string: the journal",
+    "proceedings": "null or undefined: none | string: the proceedings",
+    "year": 2020,
+    "teaser": "empty string: none | null or undefined: /publications/{id}/teaser.png | string: specific path",
+    "paper": "empty string: none | null or undefined: /publications/{id}/{id}.pdf | string: specific path",
+    "system": "empty string or null or undefined: none | string: the url",
+    "video": "empty string or null or undefined: none | string: the youtube video id",
+    "citation": "empty string or null or undefined: none | string: the bib",
+    "source": "empty string or null or undefined: none | string: url of the open source",
+    "abstract": "empty string or null or undefined: none | string: the abstract",
+    "note": "empty string or null or undefined: none | string: anything to mention",
+    "markers": ["hide", "featured", "conditional acceptance", "best paper", "honorable mention"]
+  },
+  {
+    "id": "rasipam",
+    "title": "Rasipam: Interactive Pattern Mining of Multivariate Event Sequences in Racket Sports",
+    "author": [
+      "Jiang Wu",
+      "Dongyu Liu",
+      "Ziyang Guo",
+      "Yingcai Wu"
+    ],
+    "journal": "IEEE Transactions on Visualization and Computer Graphics",
+    "proceedings": "IEEE VIS 2022",
+    "year": 2022,
+    "markers": [
+      "featured",
+      "conditional acceptance"
+    ]
+  },
+  {
+    "id": "visimages",
+    "title": "VisImages: A Fine-Grained Expert-Annotated Visualization Dataset",
+    "author": [
+      "Dazhen Deng",
+      "Yihong Wu",
+      "Xinhuan Shu",
+      "Jiang Wu",
+      "Siwei Fu",
+      "Weiwei Cui",
+      "Yingcai Wu"
+    ],
+    "journal": "IEEE Transactions on Visualization and Computer Graphics",
+    "year": 2022,
+    "markers": []
+  },
+  {
+    "id": "tacticflow",
+    "title": "TacticFlow: Visual Analytics of Ever-Changing Tactics in Racket Sports",
+    "author": [
+      "Jiang Wu",
+      "Dongyu Liu",
+      "Ziyang Guo",
+      "Qingyang Xu",
+      "Yingcai Wu"
+    ],
+    "journal": "IEEE Transactions on Visualization and Computer Graphics",
+    "proceedings": "IEEE VIS 2021",
+    "year": 2021,
+    "markers": ["featured"]
+  },
+  {
+    "id": "eventanchor",
+    "title": "EventAnchor: Reducing Human Interactions in Event Annotation of Racket Sports Videos",
+    "author": [
+      "Dazhen Deng",
+      "Jiang Wu",
+      "Jiachen Wang",
+      "Yihong Wu",
+      "Xiao Xie",
+      "Zheng Zhou",
+      "Hui Zhang",
+      "Xiaolong Zhang",
+      "Yingcai Wu"
+    ],
+    "proceedings": "ACM SIGCHI 2021",
+    "year": 2021,
+    "markers": []
+  },
+  {
+    "id": "tacminer",
+    "title": "Tac-Miner: Visual Tactic Mining for Multiple Table Tennis Matches",
+    "author": [
+      "Jiachen Wang",
+      "Jiang Wu",
+      "Anqi Cao",
+      "Zheng Zhou",
+      "Hui Zhang",
+      "Yingcai Wu"
+    ],
+    "journal": "IEEE Transactions on Visualization and Computer Graphics",
+    "proceedings": "IEEE PacificVis 2021",
+    "year": 2021,
+    "markers": ["honorable mention"]
+  },
+  {
+    "id": "dancingwords",
+    "title": "DancingWords: exploring animated word clouds to tell stories",
+    "author": [
+      "Xinhuan Shu",
+      "Jiang Wu",
+      "Xinke Wu",
+      "Hongye Liang",
+      "Weiwei Cui",
+      "Yingcai Wu",
+      "Huamin Qu"
+    ],
+    "journal": "Journal of Visualization",
+    "proceedings": "ChinaVis 2020",
+    "year": 2021,
+    "markers": [
+      "honorable mention"
+    ]
+  },
+  {
+    "id": "esrac",
+    "title": "Visual Analytics of Multivariate Event Sequence Data in Racquet Sports",
+    "author": [
+      "Jiang Wu",
+      "Ziyang Guo",
+      "Zuobin Wang",
+      "Qingyang xu",
+      "Yingcai Wu"
+    ],
+    "proceedings": "IEEE VIS 2020",
+    "year": 2020,
+    "markers": [
+      "featured"
+    ]
+  }
+]

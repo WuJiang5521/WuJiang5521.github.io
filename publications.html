@@ -5,10 +5,41 @@
     <title>Jiang Wu's Homepage</title>
     <link href="./static/css/core.css" rel="stylesheet">
     <link href="./static/css/home.css" rel="stylesheet">
+    <script src="static/js/publications.js"></script>
 </head>
 <body>
 <div id="root">
-
+    <section id="publications">
+        <h4>Publications</h4>
+    </section>
+    <section>
+        <h4>Patents</h4>
+        <h5>2022</h5>
+        <ul>
+            <li>
+                <strong>A Method for Tactic Mining and Visual Analytics</strong><br>
+                Patent No: ZL 2019 1 0940224.3
+            </li>
+            <li>
+                <strong>A Visual Analytics System for Multivariate Racket Sports Data</strong><br>
+                Patent No: ZL 2020 1 0738157.X
+            </li>
+        </ul>
+        <h5>2020</h5>
+        <ul>
+            <li>
+                <strong>A Data Acquisition System for Table Tennis</strong><br>
+                Patent No: ZL 2019 1 0939527.3
+            </li>
+        </ul>
+    </section>
 </div>
+<script>
+    const publications = document.getElementById('publications');
+    renderPublications(
+        document.getElementById('publications'),
+        pub => true
+    )
+</script>
 </body>
 </html>

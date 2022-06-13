@@ -95,6 +95,11 @@ section > h5 {
 
 section li {
     margin-bottom: 10px;
+    text-align: justify;
+}
+
+section p {
+    text-align: justify;
 }
 
 /* link */
