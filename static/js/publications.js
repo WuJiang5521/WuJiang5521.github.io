@@ -99,7 +99,7 @@ const links = {
     paper: l => l,
     video: l => l.startsWith('http')
         ? l
-        : `https://youtu.be/${l}`,
+        : `https://www.youtube.com/embed/${l}`,
     system: l => l,
     source: l => l,
     citation: l => l,
