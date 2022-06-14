@@ -27,6 +27,7 @@
                 <li class="nav ripple" onclick="switchPage('research');toggleNav();"><a>Research</a></li>
                 <li class="nav ripple" onclick="switchPage('publications');toggleNav();"><a>Publications</a></li>
                 <li class="nav ripple" onclick="switchPage('contact');toggleNav();"><a>Contact</a></li>
+                <li class="nav ripple" onclick="switchPage('life');toggleNav();"><a>Life</a></li>
                 <li class="nav ripple"><a href="./static/media/CV-Jiang Wu.pdf">CV</a></li>
             </ul>
             <div style="flex: 1"></div>
@@ -57,14 +58,23 @@
         </div>
         <iframe id="content">
         </iframe>
+        <div id="backdrop" onclick="closeNav()"></div>
     </div>
 </div>
 <script src="static/js/page_manager.js"></script>
 <script>
     const nav_list = document.getElementById('nav_list');
+    const backdrop = document.getElementById('backdrop');
     function toggleNav() {
         if (nav_list.classList.contains('expand')) nav_list.classList.remove('expand');
         else nav_list.classList.add('expand');
+
+        if (backdrop.classList.contains('expand')) backdrop.classList.remove('expand');
+        else backdrop.classList.add('expand');
+    }
+    function closeNav() {
+        if (nav_list.classList.contains('expand')) nav_list.classList.remove('expand');
+        if (backdrop.classList.contains('expand')) backdrop.classList.remove('expand');
     }
 </script>
 </body>

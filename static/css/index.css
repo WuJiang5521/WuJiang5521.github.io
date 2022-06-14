@@ -29,7 +29,27 @@
     padding: 0;
 }
 
+#backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .3s;
+    background-color: #364041;
+}
+
+#backdrop.expand {
+    pointer-events: auto;
+    opacity: .3;
+}
+
 #nav-bar {
+    position: relative;
+    z-index: 20;
     background-color: var(--nav-bar-bg-color);
     color: #ffffff;
 }

@@ -3,6 +3,7 @@ const routes = {
     research: './research.html',
     publications: './publications.html',
     contact: './contact.html',
+    life: './life.html',
 }
 
 function switchPage(route) {

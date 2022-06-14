@@ -1,0 +1,36 @@
+.image-wall {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-wall > img {
+    height: 300px;
+    transform:rotate(5deg);
+}
+
+.image-wall > img:nth-child(2n) {
+    transform:rotate(-4deg);
+}
+.image-wall > img:nth-child(3n) {
+    transform:rotate(2deg);
+}
+.image-wall > img:nth-child(4n) {
+    transform:rotate(-5deg);
+}
+.image-wall > img:nth-child(5n) {
+    transform:rotate(5deg);
+}
+.image-wall > img:nth-child(6n) {
+    transform:rotate(-6deg);
+}
+
+
+@media (max-aspect-ratio: 4/3) { /* vertical layout */
+    .image-wall > img {
+        width: 90%;
+        height: auto;
+    }
+}
