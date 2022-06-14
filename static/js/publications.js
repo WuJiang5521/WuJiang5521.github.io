@@ -99,7 +99,7 @@ const links = {
     paper: l => l,
     video: l => l.startsWith('http')
         ? l
-        : `https://www.youtube.com/embed/${l}`,
+        : `https://youtu.be/${l}`,
     system: l => l,
     source: l => l,
     citation: l => l,
@@ -109,7 +109,10 @@ function renderIconLink(type, link) {
     return r('a',
         {
             href: links[type](link),
-            title: type
+            title: type,
+            target: ['video', 'source', 'system'].includes(type)
+                ? "_blank"
+                : "_self",
         },
         icons[type](),
     );
