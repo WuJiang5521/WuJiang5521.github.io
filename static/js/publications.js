@@ -9,10 +9,10 @@ function pubsTransfer(pubs) {
             index: pId,
             authorIndex: pub.author.indexOf('Jiang Wu'),
             teaser: pub.teaser === ''
-                ? `./publications/${pub.id}/teaser.png`
+                ? `./static/publications/${pub.id}/teaser.png`
                 : pub.teaser,
             paper: pub.paper === ''
-                ? `./publications/${pub.id}/${pub.id}.pdf`
+                ? `./static/publications/${pub.id}/${pub.id}.pdf`
                 : pub.paper,
         }))
 }
@@ -51,7 +51,9 @@ function renderPublications(dom, filter, sorter = defaultSorter) {
             }
         )))
         .then(() => {
-            const filteredPubs = pubs.filter(filter);
+            const filteredPubs = filter
+                ? pubs.filter(filter)
+                : pubs.map(pub => pub);
             if (sorter) filteredPubs.sort(sorter)
 
             dom.appendChild(r('div',
@@ -68,25 +70,67 @@ function genPublishInfo(pub) {
     else return pub.proceedings;
 }
 
+const icons = {
+    paper: () => r('span', {
+        classNames: 'material-icons pub-icon',
+        innerText: 'article',
+    }),
+    video: () => r('span', {
+        classNames: 'material-icons pub-icon',
+        innerText: 'videocam',
+    }),
+    system: () => r('span', {
+        classNames: 'material-icons pub-icon',
+        innerText: 'airplay',
+    }),
+    source: () => r('span', {
+        classNames: 'material-icons pub-icon',
+        innerText: 'code',
+    }),
+    citation: () => r('button', {
+        innerText: 'Cite This',
+    }),
+    award: () => r('span', {
+        classNames: 'material-icons pub-icon',
+        innerText: 'emoji_events',
+    }),
+}
+const links = {
+    paper: l => l,
+    video: l => l.startsWith('http')
+        ? l
+        : `https://youtu.be/${l}`,
+    system: l => l,
+    source: l => l,
+    citation: l => l,
+}
+
 function renderIconLink(type, link) {
     return r('a',
-        {href: link},
-        r('span', {
-            class: '',
-            innerText: '',
-        })
+        {
+            href: links[type](link),
+            title: type
+        },
+        icons[type](),
+    );
+}
+
+function renderTag(tag, icon, tagStyle) {
+    return r('span', {classNames: `pub-tag ${tagStyle}`},
+        r('span', {classNames: 'pub-tag-icon'}, icon),
+        r('span', {classNames: 'pub-tag-text', innerText: tag}),
     );
 }
 
 function renderPub(pub) {
     return r('div', // pub root
-        {},
+        {classNames: 'pub-root'},
         r('div', // image container
-            {},
+            {classNames: 'img-container'},
             r('img', {src: pub.teaser}), // image
         ),
         r('div', // info container
-            {},
+            {classNames: 'info-container'},
             r('h4', {innerText: pub.title}), // title
             r('p', { // author list
                 innerHTML: pub.author
@@ -103,19 +147,19 @@ function renderPub(pub) {
                 innerText: genPublishInfo(pub)
             }),
             r('div', // actions & markers
-                {},
+                {classNames: 'actions'},
                 pub.paper && renderIconLink('paper', pub.paper),
                 pub.video && renderIconLink('video', pub.video),
                 pub.system && renderIconLink('system', pub.system),
                 pub.source && renderIconLink('source', pub.source),
                 pub.citation && renderIconLink('citation', pub.citation),
                 r('div', {style: 'flex: 1'}), // placeholder,
-                // pub.markers.includes('conditional acceptance') &&,
-                // pub.markers.includes('best paper') &&,
-                // pub.markers.includes('honorable mention') &&,
+                pub.markers.includes('conditional acceptance') && renderTag('Conditional Acceptance', null, 'disabled'),
+                pub.markers.includes('best paper') && renderTag('Best Paper', icons.award(), 'emphasis'),
+                pub.markers.includes('honorable mention') && renderTag('Honorable Mention', icons.award(), 'emphasis'),
             ),
             pub.note && r('div', // note
-                {innerText: pub.note}
+                {classNames: 'note', innerText: `*note: ${pub.note}`}
             )
         )
     );

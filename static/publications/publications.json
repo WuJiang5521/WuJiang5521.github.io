@@ -6,14 +6,15 @@
     "journal": "null or undefined: none | string: the journal",
     "proceedings": "null or undefined: none | string: the proceedings",
     "year": 2020,
-    "teaser": "null or undefined: none | empty string: /publications/{id}/teaser.png | string: specific path",
-    "paper": "null or undefined: none | empty string: /publications/{id}/{id}.pdf | string: specific path",
+    "teaser": "null or undefined: none | empty string: static/publications/{id}/teaser.png | string: specific path",
+    "paper": "null or undefined: none | empty string: static/publications/{id}/{id}.pdf | string: specific path",
     "system": "empty string or null or undefined: none | string: the url",
     "video": "empty string or null or undefined: none | string: the youtube video id",
     "citation": "empty string or null or undefined: none | string: the bib",
     "source": "empty string or null or undefined: none | string: url of the open source",
     "abstract": "empty string or null or undefined: none | string: the abstract",
     "note": "empty string or null or undefined: none | string: anything to mention",
+    "doi": "empty string or null or undefined: none | string: doi",
     "markers": ["hide", "featured", "conditional acceptance", "best paper", "honorable mention"]
   },
   {
@@ -28,6 +29,7 @@
     "journal": "IEEE TVCG",
     "proceedings": "IEEE VIS 2022",
     "year": 2022,
+    "teaser": "",
     "markers": [
       "featured",
       "conditional acceptance"
@@ -47,6 +49,10 @@
     ],
     "journal": "IEEE TVCG",
     "year": 2022,
+    "teaser": "",
+    "paper": "",
+    "system": "https://visimages.github.io/",
+    "doi": "10.1109/TVCG.2022.3155440",
     "markers": []
   },
   {
@@ -62,6 +68,10 @@
     "journal": "IEEE TVCG",
     "proceedings": "IEEE VIS 2021",
     "year": 2021,
+    "teaser": "",
+    "paper": "",
+    "source": "https://osf.io/9x4yp/",
+    "video": "gzB4w9M7AFE",
     "markers": ["featured"]
   },
   {
@@ -80,6 +90,9 @@
     ],
     "proceedings": "ACM SIGCHI 2021",
     "year": 2021,
+    "teaser": "",
+    "paper": "",
+    "video": "TPpzko4TDWQ",
     "markers": []
   },
   {
@@ -96,6 +109,9 @@
     "journal": "IEEE TVCG",
     "proceedings": "IEEE PacificVis 2021",
     "year": 2021,
+    "teaser": "",
+    "paper": "",
+    "video": "MCv7BF2Njtk",
     "markers": ["honorable mention"]
   },
   {
@@ -112,7 +128,11 @@
     ],
     "journal": "Journal of Visualization",
     "proceedings": "ChinaVis 2020",
-    "year": 2021,
+    "year": 2020,
+    "teaser": "",
+    "paper": "",
+    "video": "https://shuxinhuan.github.io/pub/dancingwords.mp4",
+    "system": "https://dancingwords.github.io/",
     "markers": [
       "honorable mention"
     ]
@@ -129,6 +149,9 @@
     ],
     "proceedings": "IEEE VIS 2020",
     "year": 2020,
+    "teaser": "",
+    "paper": "",
+    "video": "wy1K0mWDFDg",
     "markers": [
       "featured"
     ]

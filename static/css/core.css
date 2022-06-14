@@ -102,6 +102,34 @@ section p {
     text-align: justify;
 }
 
+/* multi column */
+
+.columns {
+    display: flex;
+    height: fit-content;
+    margin-top: 40px;
+}
+
+section ~ .columns {
+    margin-top: 0;
+}
+
+.left-col {
+    margin-top: -40px;
+    flex: 2;
+}
+
+.right-col {
+    margin-top: -40px;
+    flex: 1;
+}
+
+@media (max-aspect-ratio: 4/3) { /* vertical layout */
+    .columns {
+        flex-direction: column;
+    }
+}
+
 /* link */
 a {
     text-decoration: none;

@@ -10,7 +10,7 @@
     <link rel="manifest" href="./manifest.json"/>
     <title>Jiang Wu's Homepage</title>
     <link href="static/css/core.css" rel="stylesheet">
-    <link href="./static/css/main.css" rel="stylesheet">
+    <link href="static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 </head>
 <body>
@@ -22,35 +22,35 @@
             </div>
             <p id="name">Jiang Wu</p>
             <ul id="nav_list">
-                <li class="nav ripple" onclick="switchPage('home')"><a>Home</a></li>
-                <li class="nav ripple" onclick="switchPage('research')"><a>Research</a></li>
-                <li class="nav ripple" onclick="switchPage('publications')"><a>Publications</a></li>
-                <li class="nav ripple" onclick="switchPage('contact')"><a>Contact</a></li>
+                <li class="nav ripple" onclick="switchPage('home');toggleNav();"><a>Home</a></li>
+                <li class="nav ripple" onclick="switchPage('research');toggleNav();"><a>Research</a></li>
+                <li class="nav ripple" onclick="switchPage('publications');toggleNav();"><a>Publications</a></li>
+                <li class="nav ripple" onclick="switchPage('contact');toggleNav();"><a>Contact</a></li>
                 <li class="nav ripple"><a href="./static/media/CV-Jiang Wu.pdf">CV</a></li>
             </ul>
             <div style="flex: 1"></div>
-            <p id="nav_icon_list">
+            <p id="nav-icon-list">
                 <span class="ripple">
-                    <a class="nav_icon"
+                    <a class="nav-icon"
                        title="Google Scholar"
                        href="https://scholar.google.com/citations?user=77wR-FYAAAAJ"
                        style="background-image: url('https://user-images.githubusercontent.com/556268/96353342-3f386c80-10cb-11eb-9865-0c40dfe6ab8b.png')"></a>
                 </span>
 
                 <span class="ripple">
-                    <a class="nav_icon material-icons notranslate"
+                    <a class="nav-icon material-icons notranslate"
                        title="Email: wujiang5521@gmail.com"
                        href="mailto:wujiang5521@gmail.com">email</a>
                 </span>
 
                 <span class="ripple">
-                    <a class="nav_icon"
+                    <a class="nav-icon"
                        title="Github"
                        style="background-image: url('./static/media/github.png'); background-color: white;"
                        href="https://github.com/wujiang5521"></a>
                 </span>
             </p>
-            <div id="menu_icon" class="ripple">
+            <div id="menu-icon" class="ripple" onclick="toggleNav()">
                 <span class="material-icons">menu</span>
             </div>
         </div>
@@ -59,5 +59,12 @@
     </div>
 </div>
 <script src="static/js/page_manager.js"></script>
+<script>
+    const nav_list = document.getElementById('nav_list');
+    function toggleNav() {
+        if (nav_list.classList.contains('expand')) nav_list.classList.remove('expand');
+        else nav_list.classList.add('expand');
+    }
+</script>
 </body>
 </html>
