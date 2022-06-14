@@ -6,8 +6,8 @@
     "journal": "null or undefined: none | string: the journal",
     "proceedings": "null or undefined: none | string: the proceedings",
     "year": 2020,
-    "teaser": "empty string: none | null or undefined: /publications/{id}/teaser.png | string: specific path",
-    "paper": "empty string: none | null or undefined: /publications/{id}/{id}.pdf | string: specific path",
+    "teaser": "null or undefined: none | empty string: /publications/{id}/teaser.png | string: specific path",
+    "paper": "null or undefined: none | empty string: /publications/{id}/{id}.pdf | string: specific path",
     "system": "empty string or null or undefined: none | string: the url",
     "video": "empty string or null or undefined: none | string: the youtube video id",
     "citation": "empty string or null or undefined: none | string: the bib",
@@ -25,7 +25,7 @@
       "Ziyang Guo",
       "Yingcai Wu"
     ],
-    "journal": "IEEE Transactions on Visualization and Computer Graphics",
+    "journal": "IEEE TVCG",
     "proceedings": "IEEE VIS 2022",
     "year": 2022,
     "markers": [
@@ -45,7 +45,7 @@
       "Weiwei Cui",
       "Yingcai Wu"
     ],
-    "journal": "IEEE Transactions on Visualization and Computer Graphics",
+    "journal": "IEEE TVCG",
     "year": 2022,
     "markers": []
   },
@@ -59,7 +59,7 @@
       "Qingyang Xu",
       "Yingcai Wu"
     ],
-    "journal": "IEEE Transactions on Visualization and Computer Graphics",
+    "journal": "IEEE TVCG",
     "proceedings": "IEEE VIS 2021",
     "year": 2021,
     "markers": ["featured"]
@@ -93,7 +93,7 @@
       "Hui Zhang",
       "Yingcai Wu"
     ],
-    "journal": "IEEE Transactions on Visualization and Computer Graphics",
+    "journal": "IEEE TVCG",
     "proceedings": "IEEE PacificVis 2021",
     "year": 2021,
     "markers": ["honorable mention"]
