@@ -27,12 +27,16 @@ fetch('./static/publications/publications.json')
 
 function pubsReady() {
     return new Promise((resolve, reject) => {
-        const interval = setInterval(() => {
-            if (loadState === 0) return;
+        function test() {
+            if (loadState === 0) return false;
             if (loadState === 1) resolve();
             else reject();
-            clearInterval(interval);
-        }, 500);
+            return true;
+        }
+        if (!test())
+            const interval = setInterval(() => {
+                if (test()) clearInterval(interval);
+            }, 500);
     });
 }
 
