@@ -29,11 +29,12 @@
     "journal": "IEEE TVCG",
     "proceedings": "IEEE VIS 2022",
     "year": 2022,
+    "paper": "",
     "teaser": "",
-    "markers": [
-      "featured",
-      "conditional acceptance"
-    ]
+    "source": "https://github.com/rasipam/rasipam",
+    "video": "hsOZEcwZtCc",
+    "doi": "10.1109/TVCG.2022.3209452",
+    "markers": ["featured"]
   },
   {
     "id": "visimages",
