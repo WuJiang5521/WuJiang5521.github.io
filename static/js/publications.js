@@ -33,10 +33,11 @@ function pubsReady() {
             else reject();
             return true;
         }
-        if (!test())
+        if (!test()) {
             const interval = setInterval(() => {
                 if (test()) clearInterval(interval);
             }, 500);
+        }
     });
 }
 
