@@ -120,6 +120,10 @@ function renderIconLink(type, link) {
                 : "_self",
         },
         icons[type](),
+        r('span', {
+            classNames: 'icon-link-text pub-icon',
+            innerText: type
+        }),
     );
 }
 

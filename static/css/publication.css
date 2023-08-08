@@ -51,10 +51,16 @@
 
 .actions > a {
     margin-right: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .pub-icon {
     color: #364041;
+}
+
+.icon-link-text {
+    margin-left: 5px;
 }
 
 .pub-tag {
