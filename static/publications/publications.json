@@ -18,6 +18,20 @@
     "markers": ["hide", "featured", "conditional acceptance", "best paper", "honorable mention"]
   },
   {
+    "id": "beep",
+    "title": "Beep: Balancing Effectiveness and Efficiency when Finding Multivariate Patterns in Racket Sports",
+    "author": ["Jiang Wu", "Dongyu Liu", "Ziyang Guo", "Yingcai Wu"],
+    "journal": null,
+    "proceedings": "ACM KDD 2023 Workshop on Data Science and AI for Sports",
+    "year": 2023,
+    "teaser": "",
+    "paper": "",
+    "source": "https://github.com/BEEP-algorithm/BEEP-algorithm",
+    "note": "One of the only three accepted papers!",
+    "doi": "10.48550/arXiv.2307.11780",
+    "markers": []
+  },
+  {
     "id": "rasipam",
     "title": "Rasipam: Interactive Pattern Mining of Multivariate Event Sequences in Racket Sports",
     "author": [
