@@ -18,7 +18,7 @@
     "markers": ["hide", "featured", "conditional acceptance", "best paper", "honorable mention"]
   },
   {
-    "id": "VAID: Indexing View Designs in Visual Analytics System",
+    "id": "vaid",
     "title": "VAID: Indexing View Designs in Visual Analytics System",
     "author": ["Lu Ying", "Aoyu Wu", "Haotian Li", "Zikun Deng", "Ji Lan", "Jiang Wu", "Yong Wang", "Huamin Qu", "Dazhen Deng", "Yingcai Wu"],
     "journal": null,
