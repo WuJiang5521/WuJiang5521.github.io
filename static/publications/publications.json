@@ -18,6 +18,28 @@
     "markers": ["hide", "featured", "conditional acceptance", "best paper", "honorable mention"]
   },
   {
+    "id": "VAID: Indexing View Designs in Visual Analytics System",
+    "title": "VAID: Indexing View Designs in Visual Analytics System",
+    "author": ["Lu Ying", "Aoyu Wu", "Haotian Li", "Zikun Deng", "Ji Lan", "Jiang Wu", "Yong Wang", "Huamin Qu", "Dazhen Deng", "Yingcai Wu"],
+    "journal": null,
+    "proceedings": "ACM SIGCHI 2024",
+    "year": 2024,
+    "teaser": "",
+    "paper": "",
+    "markers": ["conditional acceptance"]
+  },
+  {
+    "id": "esvis",
+    "title": "A Comparative Study on Fixed-order Event Sequence Visualizations: Gantt, Extended Gantt, and Stringline Charts",
+    "author": ["Junxiu Tang", "Fumeng Yang", "Jiang Wu", "Yifang Wang", "Jiayi Zhou", "Xiwen Cai", "Lingyun Yu", "Yingcai Wu"],
+    "journal": "IEEE TVCG",
+    "proceedings": null,
+    "year": 2024,
+    "teaser": "",
+    "paper": "",
+    "markers": []
+  },
+  {
     "id": "beep",
     "title": "Beep: Balancing Effectiveness and Efficiency when Finding Multivariate Patterns in Racket Sports",
     "author": ["Jiang Wu", "Dongyu Liu", "Ziyang Guo", "Yingcai Wu"],
